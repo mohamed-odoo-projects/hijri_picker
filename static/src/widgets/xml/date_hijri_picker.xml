@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="datetime_calendar.DateHijriField" owl="1">
+        <t t-if="props.readonly">
+            <span t-out="formattedValue"/>
+        </t>
+        <t t-else="">
+            <div class="position-relative">
+                <input type="text" class="o_input pe-4" t-att-id="hijriDatePickerId" t-on-blur="(e)=>this.onBlur(e)" t-att-value="formattedValue" autocomplete="off" />
+                <span class="position-absolute"
+                      style="right:6px; top:50%; transform:translateY(-50%);
+                             font-size:14px; color:#555;">
+                    هـ
+                </span>
+            </div>
+        </t>
+    </t>
+</templates>
