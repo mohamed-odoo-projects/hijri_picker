@@ -15,7 +15,7 @@ export class DateHijriField extends Component {
         this.hijriDatePickerId = `hijri_datepicker_${hijriDatePickerId++}`;
 
         onWillStart(async () => {
-            await loadJS("/bh_hijri_picker/static/lib/dist/js/bootstrap-hijri-datepicker.min.js");
+            await loadJS("/hijri_picker/static/lib/dist/js/bootstrap-hijri-datepicker.min.js");
         });
 
         onMounted(() => {
